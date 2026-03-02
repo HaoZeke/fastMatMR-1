@@ -15,6 +15,7 @@ Author: Rohit Goswami [aut, cre] (<https://orcid.org/0000-0002-2393-8056>),
         Ildiko Czeller [rev] (<https://orcid.org/0000-0002-9418-4589>),
         Adam Lugowski [ctb] (<https://orcid.org/0009-0004-0922-4067>)
 Maintainer: Rohit Goswami <rgoswami@ieee.org>
+Depends: R (>= 3.1.0)
 License: MIT + file LICENSE
 SystemRequirements: C++17
 Encoding: UTF-8
