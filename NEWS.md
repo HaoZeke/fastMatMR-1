@@ -1,5 +1,12 @@
 <!-- NEWS.md is maintained by https://cynkra.github.io/fledge, do not edit -->
 
+# fastMatMR 1.2.8 (2026-03-02)
+
+## Bug Fixes
+
+- Fix clang `[[nodiscard]]` warning in vendored fast_matrix_market
+  `read_body_threads.hpp` (CRAN r-devel Fedora clang check failure)
+
 # fastMatMR 1.2.7 (2026-03-01)
 
 ## Features

@@ -155,7 +155,7 @@ namespace fast_matrix_market {
 
         // Wait on any parse results. This will throw any parse errors.
         while (!parse_futures.empty()) {
-            parse_futures.front().get();
+            (void)parse_futures.front().get();
             parse_futures.pop();
         }
 

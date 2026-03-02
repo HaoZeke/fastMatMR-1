@@ -1,0 +1,8 @@
+Patches applied to vendored fast_matrix_market v1.7.6
+=====================================================
+
+1. read_body_threads.hpp:158
+   Cast discarded [[nodiscard]] return value to void.
+   Fixes clang -Wunused-result warning (CRAN r-devel Fedora clang).
+   Upstream: https://github.com/alugowski/fast_matrix_market/
+   Applied: 2026-03-02

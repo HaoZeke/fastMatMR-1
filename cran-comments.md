@@ -1,16 +1,11 @@
-## Resubmission
+## Patch release
 
-This package was archived on 2024-08-19 due to non-API C calls
-(`SETLENGTH`, `SET_GROWABLE_BIT`, `SET_TRUELENGTH`) originating from
-the cpp11 package headers. This release requires cpp11 >= 0.5.0, which
-removed those non-API calls.
+Fixes a clang compiler warning ("ignoring return value of function
+declared with 'nodiscard' attribute") in the vendored fast_matrix_market
+C++ header `read_body_threads.hpp`, which produced a WARNING on the
+CRAN r-devel Fedora clang check.
 
-Per reviewer request, added `Depends: R (>= 3.1.0)` to satisfy the
-versioned `LinkingTo` constraint on cpp11 (usable in R >= 3.0.2).
-
-Additional changes in this release: transparent gzip (.mtx.gz) support,
-spam and SparseM sparse matrix interoperability (both optional Suggests),
-and expanded test coverage.
+The fix casts the discarded `std::future::get()` return value to void.
 
 ## R CMD check results
 
